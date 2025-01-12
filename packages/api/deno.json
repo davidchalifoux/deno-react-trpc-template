@@ -1,0 +1,13 @@
+{
+  "name": "@glizz/api",
+  "tasks": {
+    "dev": "deno run --watch -A server.ts"
+  },
+  "exports": "./client.ts",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@trpc/client": "npm:@trpc/client@^11.0.0-rc.695",
+    "@trpc/server": "npm:@trpc/server@^11.0.0-rc.695",
+    "zod": "npm:zod@^3.24.1"
+  }
+}

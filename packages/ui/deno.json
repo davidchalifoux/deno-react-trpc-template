@@ -1,0 +1,26 @@
+{
+  "tasks": {
+    "dev": "deno run -A --node-modules-dir npm:vite --port=3000",
+    "build": "deno run -A --node-modules-dir npm:vite build",
+    "serve": "deno run -A --node-modules-dir npm:vite preview",
+    "start": "deno run -A --node-modules-dir npm:vite"
+  },
+  "imports": {
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.2",
+    "@tanstack/react-router": "npm:@tanstack/react-router@^1.95.3",
+    "@tanstack/router-devtools": "npm:@tanstack/router-devtools@^1.95.3",
+    "@tanstack/router-plugin": "npm:@tanstack/router-plugin@^1.95.3",
+    "@types/react": "npm:@types/react@^19.0.4",
+    "@types/react-dom": "npm:@types/react-dom@^19.0.2",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.3.4",
+    "react": "npm:react@^19.0.0",
+    "react-dom": "npm:react-dom@^19.0.0",
+    "vite": "npm:vite@^6.0.7"
+  },
+  "fmt": {
+    "exclude": [".vite/", "src/routeTree.gen.ts"]
+  },
+  "lint": {
+    "exclude": [".vite/", "src/routeTree.gen.ts"]
+  }
+}

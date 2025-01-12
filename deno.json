@@ -1,0 +1,13 @@
+{
+  "workspace": ["./packages/api", "./packages/ui"],
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable", "deno.window"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "jsxImportSourceTypes": "@types/react"
+  },
+  "imports": {
+    "@types/react": "npm:@types/react@^19.0.4",
+    "react": "npm:react@^19.0.0"
+  }
+}
